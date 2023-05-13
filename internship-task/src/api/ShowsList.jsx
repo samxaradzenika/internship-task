@@ -33,7 +33,7 @@ const ShowsList = (props) => {
    };
 
    return (
-      <div className="grid grid-cols-4 gap-4 justify-center bg-gray-500">
+      <div className="grid grid-cols-4 gap-4 items-center justify-between bg-gray-500">
          {showData.map((show) => {
             if (show.image === null) {
                return;
@@ -65,7 +65,7 @@ const ShowsList = (props) => {
                      className="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-full mt-6 mb-4"
                   >
                      {' '}
-                     Summary{' '}
+                     See More{' '}
                   </button>
                </div>
             );
